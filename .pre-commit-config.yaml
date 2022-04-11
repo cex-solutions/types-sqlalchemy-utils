@@ -9,7 +9,7 @@ repos:
         pass_filenames: false
         require_serial: true
         args: [
-          "changeme-package-name-stubs",
+          "sqlalchemy_utils-stubs",
           "--show-error-codes",
           "--namespace-packages",
           "--show-traceback",
@@ -30,7 +30,7 @@ repos:
     hooks:
       - id: reorder-python-imports
         args: [
-            "--application-directories=changeme-package-name-stubs"
+            "--application-directories=sqlalchemy_utils-stubs"
         ]
   - repo: https://gitlab.com/pycqa/flake8
     rev: 4.0.1

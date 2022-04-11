@@ -18,11 +18,11 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="changeme-types-package-name",
-    description="Type Stubs for changeme-package-name",
+    name="types-sqlalchemy-utils",
+    description="Type Stubs for sqlalchemy-utils",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/cex-solutions/changeme-package-name",
+    url="https://github.com/cex-solutions/sqlalchemy-utils",
     author="Binovate Labs",
     author_email="cex-dev@binovate.com",
     classifiers=[
@@ -37,20 +37,28 @@ setup(
         "Programming Language :: Python :: 3.10",
     ],
     license="GPLv3",
-    keywords="stubs",
+    keywords="stubs sqlalchemy sqlalchemy-utils",
     package_data={
-        "changeme-package-name-stubs": [
-            item.split("changeme-package-name-stubs/")[-1] for item in glob.glob("**/*.pyi", recursive=True)
+        "sqlalchemy_utils-stubs": [
+            item.split("sqlalchemy_utils-stubs/")[-1] for item in glob.glob("**/*.pyi", recursive=True)
         ]
         + ["METADATA.toml"]
     },
-    packages=["changeme-package-name-stubs"],
+    packages=["sqlalchemy_utils-stubs"],
     python_requires=">=3.7, <4",
     install_requires=[],
-    extras_require={"dev": ["mypy==0.942", "pipenv-setup==3.2.0", "twine==4.0.0"]},
+    extras_require={
+        "dev": [
+            "sqlalchemy-utils==0.38.2",
+            "sqlalchemy2-stubs==0.0.2a21",
+            "mypy==0.942",
+            "pipenv-setup==3.2.0",
+            "twine==4.0.0",
+        ]
+    },
     dependency_links=[],
     project_urls={
-        "Bug Reports": "https://github.com/cex-solutions/changeme-types-package-name/issues",
-        "Source": "https://github.com/cex-solutions/changeme-types-package-name",
+        "Bug Reports": "https://github.com/cex-solutions/types-sqlalchemy-utils/issues",
+        "Source": "https://github.com/cex-solutions/types-sqlalchemy-utils",
     },
 )
