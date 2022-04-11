@@ -12,7 +12,7 @@
         {
           "notifyOnSuccess": false,
           "notifyOnFail": false,
-          "packageName": "changeme-types-package-name",
+          "packageName": "types-sqlalchemy-utils",
           "branchesConfig": [
             {
               "pattern": "main",
