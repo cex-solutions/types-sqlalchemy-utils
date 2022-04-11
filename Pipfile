@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+# If you edit this file, run `pipenv-setup sync --pipfile --dev` afterwards
+
+[dev-packages]
+
+mypy = "==0.942"
+pipenv-setup = "==3.2.0"
+twine = "==4.0.0"
+
+[requires]
+python_version = "3.9"

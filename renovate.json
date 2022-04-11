@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "pre-commit": {
+    "enabled": true
+  },
+  "schedule": [
+    "before 9am every weekday"
+  ],
+  "reviewers": ["team:devs-be"]
+}

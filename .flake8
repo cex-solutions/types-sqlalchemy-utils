@@ -1,0 +1,21 @@
+# The following rules are incompatible with or enforced by black:
+#       E301 expected 1 blank line
+#       E302 expected 2 blank lines
+#       E305 expected 2 blank lines
+#       E501 line too long
+
+# Some rules are considered irrelevant to stub files:
+#       E701, E704 multiple statements on one line (colon) -- disallows "..." on the same line
+#       F401 imported but unused -- does not recognize re-exports
+#            https://github.com/PyCQA/pyflakes/issues/474
+#       F822 undefined name in __all__ -- flake8 does not recognize 'foo: Any'
+#            https://github.com/PyCQA/pyflakes/issues/533
+
+# Rules that are out of the control of stub authors:
+#       E741 ambiguous variable name
+#       F403 import *' used; unable to detect undefined names
+#       F405 defined from star imports
+
+[flake8]
+per-file-ignores =
+  *.pyi: E301, E302, E305, E501, E701, E704, E741, F401, F403, F405, F822

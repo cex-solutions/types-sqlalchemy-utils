@@ -1,0 +1,26 @@
+{
+  "branches": [
+    "main"
+  ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      "semantic-release-pypi",
+      [
+        "semantic-release-slack-bot",
+        {
+          "notifyOnSuccess": false,
+          "notifyOnFail": false,
+          "packageName": "changeme-types-package-name",
+          "branchesConfig": [
+            {
+              "pattern": "main",
+              "notifyOnSuccess": true,
+              "notifyOnFail": true
+            }
+          ]
+        }
+      ]
+    ]
+}
