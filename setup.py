@@ -50,7 +50,7 @@ setup(
     extras_require={
         "dev": [
             "sqlalchemy-utils==0.38.2",
-            "sqlalchemy2-stubs==0.0.2a22",
+            "sqlalchemy2-stubs==0.0.2a23",
             "mypy==0.960",
             "pipenv-setup==3.2.0",
             "twine==4.0.0",
