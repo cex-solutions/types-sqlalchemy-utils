@@ -51,7 +51,7 @@ setup(
         "dev": [
             "sqlalchemy-utils==0.38.3",
             "sqlalchemy2-stubs==0.0.2a24",
-            "mypy==0.961",
+            "mypy==0.971",
             "pipenv-setup==3.2.0",
             "twine==4.0.1",
         ]
