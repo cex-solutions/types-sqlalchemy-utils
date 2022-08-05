@@ -33,7 +33,7 @@ repos:
             "--application-directories=sqlalchemy_utils-stubs"
         ]
   - repo: https://gitlab.com/pycqa/flake8
-    rev: 4.0.1
+    rev: 5.0.4
     hooks:
       - id: flake8
         args: [
