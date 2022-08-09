@@ -9,7 +9,7 @@ class WeekDay:
     def __init__(self, index: int) -> None:
         pass
 
-    def get_name(self, width:str='wide', context:str='format') -> str:
+    def get_name(self, width: str = ..., context: str = ...) -> str:
         pass
 
     @property
