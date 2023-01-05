@@ -49,7 +49,7 @@ setup(
     install_requires=[],
     extras_require={
         "dev": [
-            "sqlalchemy-utils==0.38.3",
+            "sqlalchemy-utils==0.39.0",
             "sqlalchemy2-stubs==0.0.2a31",
             "mypy==0.991",
             "pipenv-setup==3.2.0",
