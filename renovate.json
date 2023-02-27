@@ -2,11 +2,15 @@
   "extends": [
     "config:base"
   ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
+  "automergeStrategy": "squash",
   "pre-commit": {
     "enabled": true
   },
-  "schedule": [
-    "before 9am every weekday"
-  ],
   "reviewers": ["team:devs-be"]
 }
