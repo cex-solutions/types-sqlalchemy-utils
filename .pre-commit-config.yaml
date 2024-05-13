@@ -18,7 +18,7 @@ repos:
           "--warn-incomplete-stub",
         ]
   - repo: https://github.com/psf/black
-    rev: 24.2.0
+    rev: 24.4.2
     hooks:
       - id: black
         args: [
@@ -33,7 +33,7 @@ repos:
             "--application-directories=sqlalchemy_utils-stubs"
         ]
   - repo: https://github.com/PyCQA/flake8
-    rev: 6.1.0
+    rev: 7.0.0
     hooks:
       - id: flake8
         args: [
@@ -44,11 +44,11 @@ repos:
         types:
           - pyi
         additional_dependencies: [
-          flake8-bugbear==21.11.29,
-          flake8-pyi==22.1.0,
+          flake8-bugbear==24.4.26,
+          flake8-pyi==24.4.1,
         ]
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: check-merge-conflict
       - id: debug-statements

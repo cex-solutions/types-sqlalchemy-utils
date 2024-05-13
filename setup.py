@@ -1,9 +1,3 @@
-"""A setuptools based setup module.
-See:
-https://packaging.python.org/guides/distributing-packages-using-setuptools/
-https://github.com/pypa/sampleproject
-Modified by Madoshakalaka@Github (dependency links added)
-"""
 from os import path
 
 from setuptools import glob
@@ -49,9 +43,9 @@ setup(
     install_requires=[],
     extras_require={
         "dev": [
-            "sqlalchemy-utils==0.41.1",
+            "sqlalchemy-utils==0.41.2",
             "sqlalchemy2-stubs==0.0.2a38",
-            "mypy==1.8.0",
+            "mypy==1.10.0",
             "pipenv-setup==3.2.0",
             "twine==5.0.0",
         ]

@@ -1,21 +1,12 @@
-from __future__ import annotations
-
-from typing import Union
-
 from .. import ImproperlyConfigured as ImproperlyConfigured, i18n as i18n
 from ..utils import str_coercible as str_coercible
 
 @str_coercible
 class Currency:
-    def __init__(self, code: Union[str, Currency]) -> None:
-        pass
+    def __init__(self, code: str | Currency) -> None: ...
     @classmethod
-    def validate(self, code: str) -> None:
-        pass
+    def validate(self, code: str) -> None: ...
     @property
-    def symbol(self) -> str:
-        pass
+    def symbol(self) -> str: ...
     @property
-    def name(self) -> str:
-        pass
-
+    def name(self) -> str: ...
