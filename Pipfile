@@ -5,7 +5,7 @@ name = "pypi"
 # If you edit this file, run `pipenv-setup sync --pipfile --dev` afterwards
 
 [dev-packages]
-sqlalchemy-utils = "==0.41.2"
+sqlalchemy-utils = "==0.42.0"
 sqlalchemy2-stubs = "==0.0.2a38"
 
 mypy = "==1.10.0"
