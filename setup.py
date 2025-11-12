@@ -47,6 +47,7 @@ setup(
             "sqlalchemy2-stubs==0.0.2a38",
             "mypy==1.18.2",
             "twine==6.2.0",
+            "phonenumbers>=5.9.2",
         ]
     },
     dependency_links=[],
