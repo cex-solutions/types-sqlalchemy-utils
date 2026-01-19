@@ -1,3 +1,8 @@
-from typing import Any
+from typing import TypeVar
+from collections.abc import Iterable
 
-def __getattr__(name: str) -> Any: ...  # incomplete
+_T = TypeVar("_T")
+
+def str_coercible(cls: type[_T]) -> type[_T]: ...
+def is_sequence(value: object) -> bool: ...
+def starts_with(iterable: Iterable[_T], prefix: _T) -> bool: ...
