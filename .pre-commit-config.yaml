@@ -18,7 +18,7 @@ repos:
           "--warn-incomplete-stub",
         ]
   - repo: https://github.com/psf/black
-    rev: 26.1.0
+    rev: 26.5.1
     hooks:
       - id: black
         args: [
@@ -26,14 +26,14 @@ repos:
           "--skip-magic-trailing-comma",
         ]
   - repo: https://github.com/asottile/reorder_python_imports
-    rev: v3.16.0
+    rev: v3.17.0
     hooks:
       - id: reorder-python-imports
         args: [
             "--application-directories=sqlalchemy_utils-stubs"
         ]
   - repo: https://github.com/PyCQA/flake8
-    rev: 7.3.0
+    rev: 7.4.1
     hooks:
       - id: flake8
         args: [
